@@ -1,0 +1,59 @@
+body {
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-bottom: 3rem; /* Just adding some separation between our demos */
+}
+
+.block-example {
+    display: inline-block;
+    background-color: #2C95FC;
+    border: 1px solid purple;
+    height: 100px;
+    margin-bottom: 1rem;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.inline-color {
+    color: red;
+}
+
+.inline-heading {
+    display: inline;
+}
+
+.vertically-aligned-image {
+    vertical-align: middle;
+}
+
+ul {
+    margin-left: 40px;
+}
+
+.navbar {
+    background-color: lavender;
+}
+
+.navbar-section {
+    /* display: none; */
+    visibility: hidden;
+    /* opacity: 0; */
+}
+
+.navbar > ul {
+    list-style: none;
+}
+
+.navbar li {
+    display: block;
+    background-color: lightgreen;
+    padding: 1rem;
+}

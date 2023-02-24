@@ -1,0 +1,89 @@
+html {
+  font-family: sans-serif;
+  color: #222;
+}
+
+section {
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  height: 100px;
+  width: 100px;
+  background: pink;
+  border: 1px solid #222;  
+}
+
+.item-2 { background: red; }
+.item-3 { background: orange; }
+.item-4 { background: yellow; }
+.item-5 { background: green; }
+
+.justify-content {
+  background: #ccc;
+  justify-content: flex-start;
+}
+
+.align-items {
+  background: #ccc;
+  height: 300px;
+  align-items: flex-start;
+}
+
+.align-items .item {
+/*   height: unset; */
+}
+
+.align-items .item-2 {
+/*   align-self: flex-end; */
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-container.center {
+  height: 65vh;
+  background: #ccc;
+/*   justify-content: center;
+  align-items: center; */
+}
+
+.center .item {
+/*   margin: auto; */
+}
+
+.flex-sizing {
+  width: 100%;
+}
+
+.flex-sizing .item {
+  /* flex-basis: 20%; */
+}
+
+.flex-sizing .item-1 {
+  flex-grow: 1;
+}
+
+.flex-sizing .item-3 {
+  flex-grow: 2;
+}
+
+.flex-sizing .item-5 {
+  flex-shrink: 1;
+}
+
+.flex-order .item-1 {
+  /* order: 3; */
+}
+
+.flex-order .item-3 {
+  order: 1;
+}

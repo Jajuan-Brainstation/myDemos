@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Flexbox</title>
+
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>CSS Flexbox</h1>
+
+  <section>
+    <h2>display: flex;</h2>
+    <p>Start by creating a container around the items you wish to lay out using flexbox, with <strong>display:
+        flex;</strong></p>
+
+    <div class="flex-container">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+      <div class="item item-5">item 5</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>flex-direction</h2>
+    <p>Control the direction elements should flow and pick the axis you wish to use as the main axis</p>
+
+    <ul>
+      <li><strong>row (default):</strong> items run left to right along the x-axis</li>
+      <li><strong>column:</strong> items run top to bottom along the y-axis</li>
+      <li><strong>row-reverse:</strong> items run right to left along the x-axis</li>
+      <li><strong>column-reverse:</strong> items run bottom to top along the y-axis</li>
+    </ul>
+
+    <div class="flex-container">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+      <div class="item item-5">item 5</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>justify-content</h2>
+    <p>Control spacing of elements along the main axis</p>
+
+    <ul>
+      <li><strong>flex-start (default):</strong> items are packed toward the start line</li>
+      <li><strong>flex-end:</strong> items are packed toward the end line</li>
+      <li><strong>center:</strong> items are centered along the line</li>
+      <li><strong>space-between:</strong> first item at start, last item at end, even spacing between the rest</li>
+      <li><strong>space-around:</strong> items are evenly distributed with one unit of space around each</li>
+      <li><strong>space-evenly:</strong> items are distributed so that there is equal spacing on either side of each
+        element</li>
+    </ul>
+
+    <div class="flex-container justify-content">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+      <div class="item item-5">item 5</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>align-items</h2>
+    <p>Control alignment of elements along the cross axis</p>
+
+    <ul>
+      <li><strong>flex-start (default):</strong> items are packed toward the start line</li>
+      <li><strong>flex-end:</strong> items are packed toward the end line</li>
+      <li><strong>center:</strong> items are centered along the line</li>
+      <li><strong>stretch:</strong> items are stretched such that their cross sizes are all the same -- respecting width
+        and height constraints</li>
+      <li><strong>baseline:</strong> items are aligned such that their <a
+          href="https://drafts.csswg.org/css-flexbox-1/#flex-baselines" rel="external noopener">flex container
+          baselines</a> align</li>
+    </ul>
+
+    <div class="flex-container align-items">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+      <div class="item item-5">item 5</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>flex-wrap</h2>
+    <p>By default, flexbox tries to shrink elements to fit on a single line. In order to wrap, we need to use
+      <strong>flex-wrap</strong></p>
+
+    <div class="flex-container wrap">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+      <div class="item item-5">item 5</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>vertical & horizontal centering 😍</h2>
+    <p>With flexbox, centering is a breeze! Just set <strong>justify-content</strong> and/or <strong>align-items</strong>
+      to <strong>center</strong> to achieve your desired result!</p>
+
+    <div class="flex-container center">
+      <div class="item">pls center me</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>flex-grow, flex-basis and flex-shrink</h2>
+    <p>Control the relative size of elements in flexbox container</p>
+
+    <ul>
+      <li><strong>flex-grow:</strong> flex grow factor, a unitless value defining a ratio of item's share of available space. Larger value means prioritize item's growth.</li>
+      <li><strong>flex-shrink:</strong> flex shrink factor, a unitless value defining item's ratio of shrink priority. Larger value means prioritize item's shrinkage</li>
+      <li><strong>flex-basis:</strong> sets the initial main size of a flex item. Following order with other size properties: content —> width —> flex-basis (limited by max | min-width) </li>
+      <li><strong>flex:</strong> a shorthand property that allows to set flex-grow flex-shrink and flex-basis in a single value</li>
+    </ul>
+
+    <div class="flex-container flex-sizing">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+      <div class="item item-5">item 5</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>order</h2>
+    <p>Control the order of elements in flexbox container</p>
+
+    <ul>
+      <li><strong>order:</strong> allows you to define order of flex elements regardless of their order in HTML</li>
+    </ul>
+
+    <div class="flex-container flex-order">
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+      <div class="item item-5">item 5</div>
+    </div>
+  </section>
+
+</body>
+</html>

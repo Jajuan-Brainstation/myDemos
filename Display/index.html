@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Demo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>CSS Display Demo</h1>
+    
+    <section>
+        <h2>Block elements demo</h2>
+        <!-- USEFUL ELEMENTS THAT ARE DISPLAY BLOCK BY DEFAULT -->
+        <div>A div is a block element</div>
+        <p>This is a paragraph which is also a block element</p>
+        <h1>Headings are block elements</h1>
+        <h6>Headings are block elements</h6>
+        <hr>
+        <!-- Note: Use of computed tab -->
+        <!-- Note: Colors in elements tabs -->
+
+        <!-- EXPLORE THE BLOCK ELEMENTS -->
+        <!-- Add 3 divs <div class="block-example">Block 1</div> with class of .block-example -->
+        <div class="block-example">Block 1</div>
+        <div class="block-example">Block 2</div>
+        <div class="block-example">Block 3</div>
+        <!-- What do you think will happen when we add our 3 divs? -->
+        <!-- Note: Margins added by default -->
+        <!-- center the divs with margins -->
+
+
+    </section>
+
+    <section>
+        <h2>Inline elements demo</h2>
+        <!-- USEFUL ELEMENTS THAT ARE INLINE ELEMENTS BY DEFAULT -->
+        <a src="www.google.com">Google</a>
+        <img src="https://via.placeholder.com/50" alt="placeholder">
+        <span>This is a placeholder for a really cool logo</span>
+        <i>I love it</i>
+        <b>It's the best</b>
+
+        <!-- CHANGE A DEFAULT BLOCK TO INLINE -->
+        <!-- <img src="https://via.placeholder.com/50" alt="placeholder"> -->
+        <img src="https://via.placeholder.com/50"/>
+        <h3 class="inline-heading">This is a really <span class="inline-color">cool</span> image</h3>
+        <!-- Make a h3 display inline class="inline-heading" -->
+        <!-- How do you think these two elements will behave? -->
+        <!-- Add a span to change the color of some text class="inline-color" -->
+
+    </section>
+
+    <section class="navbar-section">
+        <h2>Inline-block elements demo</h2>
+        <!-- USEFUL ELEMENTS THAT ARE INLINE-BLOCK ELEMENTS BY DEFAULT -->
+        <button>Click Here</button>
+        <textarea placeholder="text area"></textarea>
+        <input placeholder="Input something here"/>
+
+        <!-- CHANGE BLOCK ELEMENT TO INLINE-BLOCK BY CREATING A NAVBAR -->
+        <!-- Add navbar using semantic <nav class="navbar"></nav> -->
+        <!-- Add <ul> with 3 <li> -->
+        <!-- Add some <a> tags to each list item Home, About Us, Contact -->
+        <!-- Add some color and padding to our list items .navbar li -->
+        <!-- display: inline-block for each list item .navbar li-->
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+    </section>
+
+    <section>
+        <!-- Add background color for demonstration  -->
+        <h2>This section is to demonstrate display none and visibility</h2>
+    </section>
+</body>
+</html>
